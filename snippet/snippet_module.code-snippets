@@ -1,0 +1,14 @@
+{
+	"annotate": {
+		"prefix": "anno",
+		"body": [
+			"\"\"\"Название: $TM_FILENAME",
+			"",
+			"Автор: <USERNAME>",
+			"Дата: $CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
+			"Описание: ",
+			"\"\"\"",
+			""
+		]
+	}
+}

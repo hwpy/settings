@@ -1,0 +1,39 @@
+{{! Docstring }}
+{{=<% %>=}}
+[описание объекта]
+<%#argsExist%>
+
+Аргументы:
+---------
+<%#args%>
+    - <%var%> (<%typePlaceholder%>) - [описание]
+<%/args%>
+<%/argsExist%>
+<%#kwargsExist%>
+
+<%#kwargs%>
+    - <%var%> (<%typePlaceholder%>) - [описание] (по умолчанию: {<%&default%>})
+<%/kwargs%>
+<%/kwargsExist%>
+<%#returnsExist%>
+
+Возвращает:
+----------
+<%#returns%>
+    <%typePlaceholder%> - [описание]
+<%/returns%>
+<%/returnsExist%>
+<%#yieldsExist%>
+
+<%#yields%>
+    - <%typePlaceholder%> - [описание]
+<%/yields%>
+<%/yieldsExist%>
+<%#exceptionsExist%>
+
+Исключения:
+----------
+<%#exceptions%>
+    - <%type%>: [описание]
+<%/exceptions%>
+<%/exceptionsExist%>
