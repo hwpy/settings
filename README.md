@@ -1,6 +1,6 @@
 # settings
 --------
-Linter and snippet settings
+Linter and snippet settings for VS Code
 --------
 
 ## dirs:
