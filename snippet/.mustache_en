@@ -1,0 +1,39 @@
+{{! Docstring }}
+{{=<% %>=}}
+[object description]
+<%#argsExist%>
+
+Args:
+----
+<%#args%>
+    - <%var%> (<%typePlaceholder%>) - [description]
+<%/args%>
+<%/argsExist%>
+<%#kwargsExist%>
+
+<%#kwargs%>
+    - <%var%> (<%typePlaceholder%>) - [description] (default: {<%&default%>})
+<%/kwargs%>
+<%/kwargsExist%>
+<%#returnsExist%>
+
+Returns:
+-------
+<%#returns%>
+    <%typePlaceholder%> - [description]
+<%/returns%>
+<%/returnsExist%>
+<%#yieldsExist%>
+
+<%#yields%>
+    - <%typePlaceholder%> - [description]
+<%/yields%>
+<%/yieldsExist%>
+<%#exceptionsExist%>
+
+Raises:
+------
+<%#exceptions%>
+    - <%type%>: [description]
+<%/exceptions%>
+<%/exceptionsExist%>
