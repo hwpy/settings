@@ -1,26 +1,26 @@
 {
-	"annotate_ru": {
-		"prefix": "anno_ru",
-		"body": [
-			"\"\"\"Название: $TM_FILENAME",
-			"",
-			"Автор: <USERNAME>",
-			"Дата: $CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
-			"Описание: ",
-			"\"\"\"",
-			""
-		]
-	},
-	"annotate_en": {
-		"prefix": "anno_en",
-		"body": [
-			"\"\"\"Name: $TM_FILENAME",
-			"",
-			"Author: <USERNAME>",
-			"Date: $CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
-			"Description: ",
-			"\"\"\"",
-			""
-		]
-	}
+    "annotate_ru": {
+        "prefix": "anno_ru",
+        "body": [
+            "\"\"\"Название: $TM_FILENAME",
+            "",
+            "Автор: <USERNAME>",
+            "Дата: $CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
+            "Описание: ",
+            "\"\"\"",
+            ""
+        ]
+    },
+    "annotate_en": {
+        "prefix": "anno_en",
+        "body": [
+            "\"\"\"Name: $TM_FILENAME",
+            "",
+            "Author: <USERNAME>",
+            "Date: $CURRENT_YEAR.$CURRENT_MONTH.$CURRENT_DATE",
+            "Description: ",
+            "\"\"\"",
+            ""
+        ]
+    }
 }

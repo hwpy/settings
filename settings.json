@@ -1,0 +1,74 @@
+
+{
+
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "GitHub Dark",
+    "telemetry.feedback.enabled": false,
+    "files.trimTrailingWhitespace": true,
+
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+
+    "autoDocstring.customTemplatePath": ".mustache",
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+
+    "[python]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "ruff.configuration": "${workspaceFolder}/pyproject.toml",
+    "workbench.iconTheme": "material-icon-theme",
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "update.mode": "manual",
+
+    //vim
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-l>": false,
+        "<C-b>": false,
+        "<C-n>": false,
+        "<Esc>": false
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-s>"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "f", "w"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "f", "z"],
+            "commands": ["actions.find"]
+        },
+        {
+            "before": ["<leader>", "x"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": ["<leader>", "t"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
+        }
+    ],
+}
