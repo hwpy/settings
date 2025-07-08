@@ -31,10 +31,5 @@
     "key": "ctrl+`",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminalFocus && vim.mode == 'Normal'"
-  },
-  {
-    "key": "escape",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus || searchViewletVisible || inputFocus || inQuickOpen"
   }
 ]

@@ -1,50 +1,54 @@
-
 {
-
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.iconTheme": "material-icon-theme",
+
     "telemetry.feedback.enabled": false,
     "files.trimTrailingWhitespace": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "update.mode": "manual",
+    "explorer.confirmDelete": false,
 
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
 
     "autoDocstring.customTemplatePath": ".mustache",
     "git.autofetch": true,
-    "explorer.confirmDelete": false,
-    "editor.unicodeHighlight.nonBasicASCII": false,
 
+    // Настройки для Python
     "[python]": {
         "editor.formatOnSave": false,
         "editor.defaultFormatter": "charliermarsh.ruff",
         "diffEditor.ignoreTrimWhitespace": false
     },
     "ruff.configuration": "${workspaceFolder}/pyproject.toml",
-    "workbench.iconTheme": "material-icon-theme",
-    "diffEditor.ignoreTrimWhitespace": false,
 
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "update.mode": "manual",
+    // Vim
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
 
-    //vim
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.visual": "block",
-    "vim.useSystemClipboard": true,
-    "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-h>": false,
         "<C-j>": false,
         "<C-k>": false,
         "<C-l>": false,
         "<C-b>": false,
-        "<C-n>": false,
-        "<Esc>": false
+        "<C-n>": false
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<C-s>"],
             "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<C-w>"],
+            "commands": ["workbench.action.closeActiveEditor"]
         },
         {
             "before": ["<leader>", "f", "f"],
@@ -59,10 +63,6 @@
             "commands": ["actions.find"]
         },
         {
-            "before": ["<leader>", "x"],
-            "commands": ["workbench.action.closeActiveEditor"]
-        },
-        {
             "before": [";"],
             "after": [":"]
         },
@@ -70,5 +70,5 @@
             "before": ["<leader>", "t"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
         }
-    ],
+    ]
 }
